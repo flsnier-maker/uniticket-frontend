@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://clubticket-api.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL || "https://clubticket-api.onrender.com/api/v1",
 });
 
 api.interceptors.request.use((config) => {
